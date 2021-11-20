@@ -214,7 +214,7 @@ function App() {
         </Row>
         <Container className="info-container mb-4">
           <Row className="px-3">
-            <p className="pt-3">Click a node to see more information</p>
+            <p className="pt-3 mb-1">Click a node to see more information</p>
           </Row>
           <Row className="px-3 pb-3">
             <img className="map" src={map} />
