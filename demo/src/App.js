@@ -5,7 +5,7 @@ import circle from './images/circle.svg'
 import clock from './images/clock.svg'
 import toggler from './images/toggler.svg'
 import helvar from './images/helvar_logo.svg'
-import map from './images/map.svg'
+import map from './images/nodes1.png'
 import loader from './images/loader.svg'
 import { Row, Col, Container } from "react-bootstrap"
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
@@ -192,11 +192,8 @@ function App() {
           <p className="mb-2"><b>See nodes on the map</b></p>
         </Row>
         <Container className="info-container mb-4">
-          <Row className="px-3">
-            <p className="pt-3 mb-1">Click a node to see more information</p>
-          </Row>
-          <Row className="px-3 pb-3">
-            <img className="map" src={map} />
+          <Row className="px-1 py-3">
+            <img className="map" src={map} className="w-100" />
           </Row>
         </Container>
       </div>
