@@ -5,7 +5,7 @@ import circle from './images/circle.svg'
 import clock from './images/clock.svg'
 import toggler from './images/toggler.svg'
 import helvar from './images/helvar_logo.svg'
-import map from './images/nodes1.png'
+import map from './images/map.svg'
 import loader from './images/loader.svg'
 import { Row, Col, Container } from "react-bootstrap"
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
@@ -154,7 +154,7 @@ function App() {
         <Room name='Grouproom "Tokyo"' id={3} active={data && data["3"] && data["3"] > 0} />
         <Room name='Grouproom "Berlin"' id={4} active={data && data["4"] && data["4"] > 0} />
         <Room name='Marketing' id={5} active={data && data["5"] && data["5"] > 0} />
-        <Row className="px-4">
+        <Row className="px-4 pt-3">
           <p className="mb-2"><b>Set timer</b></p>
         </Row>
         <Container className="info-container mb-4">
@@ -193,7 +193,7 @@ function App() {
         </Row>
         <Container className="info-container mb-4">
           <Row className="px-1 py-3">
-            <img className="map" src={map} className="w-100" />
+            <img className="map" src={map} />
           </Row>
         </Container>
       </div>
