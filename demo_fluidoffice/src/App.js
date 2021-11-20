@@ -88,7 +88,7 @@ function App() {
       : 
       <div className="loader text-center">
         <div>
-          <img src={fluidOffice} style={{marginTop: "-200px", marginBottom: "200px", height: "80px"}} />
+          <img src={fluidOffice} style={{marginTop: "-170px", marginBottom: "200px", height: "80px"}} />
         </div>
         <div className="pb-5 mb-3">
           <img className="rotating loader-holder" src={loader} />
