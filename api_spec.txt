@@ -18,13 +18,13 @@ POST: {currenttime: timestamp, (optional: timespan: int (in seconds)), (optional
 ]
 
 /realtime_rooms/
-POST: {currenttime: timestamp, (optional: timespan: int (in seconds)), (optional: deviceid)}
+POST: {currenttime: timestamp, (optional: timespan: int (in seconds)), (optional: roomid)}
 [
 	{roomid, hitcount}, ...
 ]
 
 /realtime_sites/
-POST: {currenttime: timestamp, (optional: timespan: int (in seconds)), (optional: deviceid)}
+POST: {currenttime: timestamp, (optional: timespan: int (in seconds)), (optional: site)}
 [
 	{siteid, hitcount}, ...
 ]Z
