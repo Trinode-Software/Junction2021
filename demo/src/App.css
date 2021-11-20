@@ -1,0 +1,174 @@
+.App {
+  background-color: rgb(37, 40, 45);
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.image {
+  width: 50px;
+  position: absolute;
+  margin-top: -62px;
+  margin-left: 5px;
+
+}
+
+.header {
+  width: 100%;
+  display: flex;
+}
+
+.text-header {
+  text-align: center;
+  justify-content: center;
+}
+
+.info-container {
+  border-radius: 20px;
+  background-color: rgb(27, 29, 32);
+  width: 90%;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  margin-right: 7px;
+  margin-top: -2px;
+}
+
+.circle-room {
+  width: 10px;
+  height: 10px;
+  margin-right: 7px;
+  margin-left: 30px;
+  margin-top: -2px;
+}
+
+@keyframes blink {  
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-webkit-keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.blink {
+  -webkit-animation: blink 3s ease-in-out infinite;
+  -moz-animation: blink 3s linear infinite;
+  animation: blink 3s ease-in-out infinite;
+} 
+
+.minus-p {
+  margin-top: -15px;
+}
+
+.room {
+  background-color: rgb(27, 29, 32);
+  width: 90%;
+  border-left: solid 5px rgb(60, 60, 60);
+  border-radius: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: 15px;
+  display: flex;
+}
+
+.active-room {
+  background-color: rgb(27, 29, 32);
+  width: 90%;
+  border-left: solid 5px #5cb85c
+  ;
+  border-radius: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: 15px;
+  display: flex;
+}
+
+
+.half {
+  width: 50%
+}
+
+.other-half {
+  width: 50%;
+  text-align: end;
+}
+
+.text-room {
+  color:rgb(90, 90, 90);
+  margin-left: 30px;
+}
+
+.footer {
+  height: 50px;
+  background-color: rgb(10, 10, 10);
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  top: 90vh;
+  padding-left:0;
+  padding-right: 0;
+}
+
+.clock {
+  width:280px
+}
+
+.toggler {
+  width: 60px
+}
+
+.loader {
+  padding-top: 25vh;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 0.5s linear infinite;
+  -moz-animation: rotating 0.5s linear infinite;
+  -ms-animation: rotating 0.5s linear infinite;
+  -o-animation: rotating 0.5s linear infinite;
+  animation: rotating 0.5s linear infinite;
+}
+
+.loader-holder {
+  width: 150px;
+}
+
+.helvar-logo {
+  width: 150px;
+}
