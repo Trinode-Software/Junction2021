@@ -1,0 +1,30 @@
+reaaliaikainen
+
+sensorikohtaiset datat
+huonekohtaiset datat
+tilakohtaiset datat
+
+ - timestamp
+ - sensorid
+ - hit amount
+
+"Kuinka monta kertaa viimeisen x minuutin aikana?"
+"Kuinka monta NYT?" (Viimeinen minuutti/vartti)
+
+/realtime_sensors/
+POST: {currenttime: timestamp, (optional: timespan: int (in seconds)), (optional: deviceid)}
+[
+	{deviceid, hitcount}, ...
+]
+
+/realtime_rooms/
+POST: {currenttime: timestamp, (optional: timespan: int (in seconds)), (optional: deviceid)}
+[
+	{roomid, hitcount}, ...
+]
+
+/realtime_sites/
+POST: {currenttime: timestamp, (optional: timespan: int (in seconds)), (optional: deviceid)}
+[
+	{siteid, hitcount}, ...
+]Z
