@@ -170,5 +170,115 @@
 }
 
 .helvar-logo {
-  width: 150px;
+  width: 40px;
+}
+
+.card-app-1 {
+  width:50%;
+  padding-left: 15px;
+  padding-right: 7.5px;
+}
+
+.card-app-2 {
+  width:50%;
+  padding-right: 15px;
+  padding-left: 7.5px;
+}
+
+.form-submit {
+  width: 82%;
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 0.5%;
+  border-width: 1px;
+  outline: none;
+  color: rgb(66, 66, 66);
+  background-color: rgb(245, 245, 245);
+  border-style: none;
+}
+
+.btn-primary {
+  background-color: rgb(113, 144, 255);
+  border:none
+}
+
+.text-p {
+  color:rgb(113, 144, 255)
+}
+.search {
+  height: 48px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.text-gray {
+  color:rgb(66, 66, 66)
+}
+
+.text-gray-light {
+  color:rgb(180, 180, 180)
+}
+
+.very-small {
+  font-size: 12px;
+}
+
+.square {
+  width: 100%;
+}
+
+.info {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-style: solid;
+  border-color:rgb(214, 223, 255);
+  border-width: 1px;
+  border-radius: 15px;
+  width: auto;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.info-2 {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-style: solid;
+  border-color:rgb(214, 223, 255);
+  border-width: 1px;
+  border-radius: 15px;
+  width: auto;
+  margin-right: 15px;
+}
+
+.info-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-style: solid;
+  border-color:rgb(214, 223, 255);
+  border-width: 1px;
+  border-radius: 15px;
+  width: auto;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 405px) {
+  .info-3 {
+    margin-left: 15px;
+    margin-top: 7px;
+  }
+}
+
+.skadabang {
+  color: rgb(113, 144, 255);
+  position: absolute;
+  top: 17px;
+  left: 30px
 }
