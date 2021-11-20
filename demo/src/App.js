@@ -114,7 +114,7 @@ function App() {
           <h1>{currentTime.getHours() + ':' + currentTime.getMinutes()}</h1>
         </Row>
         <Row className="text-center text-success minus-p">
-          <p><span><img className="circle blink" src={circle} /></span><b>You are at home</b></p>
+          <p><span><img className="circle blink" src={circle} style={{marginTop:"-5px"}} /></span><b>Motion detected</b></p>
         </Row>
         <Row className="px-4">
           <p className="mb-2"><b>Notifications</b></p>
@@ -125,12 +125,21 @@ function App() {
               <CheckCircleOutlineIcon style={{fontSize:"27px"}} className="text-success"/>
             </Col>
             <Col xs={9}>
-              All equipment is working 
+              Sensors functioning
             </Col>
           </Row>
         </Container>
         <Row className="px-4">
-          <p className="mb-2"><b>History data</b></p>
+          <p className="mb-2"><b>Your rooms</b></p>
+        </Row>
+        <Room ago="" name='Workspace East' id={0} active={data && data["0"] && data["0"] > 0} />
+        <Room ago="14" name='Grouproom "Berlin"' id={4} active={data && data["4"] && data["4"] > 0} />
+        <Room ago="16" name='Grouproom "Tokyo"' id={3} active={data && data["3"] && data["3"] > 0} />
+        <Room ago="33" name='Human Resources' id={2} active={data && data["2"] && data["2"] > 0} />
+        <Room ago="36" name='Marketing' id={5} active={data && data["5"] && data["5"] > 0} />
+        <Room ago="56" name='Workspace South' id={1} active={data && data["1"] && data["1"] > 0} />
+        <Row className="px-4">
+          <p className="mb-2 pt-3"><b>History data</b></p>
         </Row>
         <Container className="info-container mb-3">
           <Row className="pt-3 px-3">
@@ -145,15 +154,7 @@ function App() {
             <Chart options={options} series={series} type="line" width="300" />
           </div>
         </Container>
-        <Row className="px-4">
-          <p className="mb-2"><b>Your rooms</b></p>
-        </Row>
-        <Room name='Workspace East' id={0} active={data && data["0"] && data["0"] > 0} />
-        <Room name='Workspace South' id={1} active={data && data["1"] && data["1"] > 0} />
-        <Room name='Human Resources' id={2} active={data && data["2"] && data["2"] > 0} />
-        <Room name='Grouproom "Tokyo"' id={3} active={data && data["3"] && data["3"] > 0} />
-        <Room name='Grouproom "Berlin"' id={4} active={data && data["4"] && data["4"] > 0} />
-        <Room name='Marketing' id={5} active={data && data["5"] && data["5"] > 0} />
+        
         <Row className="px-4 pt-3">
           <p className="mb-2"><b>Set timer</b></p>
         </Row>
